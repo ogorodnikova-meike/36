@@ -1,0 +1,268 @@
+/*requirements password*/
+.rqs {
+    border-radius: 50px;
+    white-space: nowrap;
+    background: #bd1218;
+    line-height: 30px;
+    padding: 0 7px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+}
+
+.rqs.disabled{
+    opacity: 0.5;
+}
+
+.modal:not(#pause-store)
+.modal-dialog{
+    max-width: max-content !important;
+}
+
+.modal:not(#modal-password,
+           #state-order,
+           #pause-store)
+.modal-content {
+    width: 70vw;
+    height: 90vh;
+}
+
+.row, .addres{
+    width: 100%;
+    height: 100%;
+}
+
+#pause-store
+.modal-dialog{
+    max-width: 500px !important;
+}
+
+#map-address {
+    width: 100%;
+    height: calc(100% - 4rem);
+    border-radius: 20px;
+}
+
+.gm-style-mtc,
+.gm-svpc,
+.gm-style-cc {
+    display: none;
+}
+.gm-ui-hover-effect {
+    display: none !important;
+}
+
+.card.message {
+    border: 0 !important;
+    border-radius: 15px;
+    position: absolute;
+    padding: 10px;
+    width: 170px;
+    top: 100px;
+    right: 30px;
+}
+
+.gm-style .gm-style-iw-c {
+    width: 150px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 11px;
+}
+
+.gm-style .gm-style-iw-c {
+    padding: 10px;
+}
+
+.tab-pane .dir-clear{
+    z-index: 1;
+    padding: 0;
+    background-color: #fff;
+    transition: 0.3s;
+    opacity: 0;
+    border: 0;
+    box-shadow: none;
+    position: absolute;
+    transform: translateX(2px);
+    top: 17px;
+    right: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+.tab-pane .dir-clear span{
+    vertical-align: middle;
+    color: #bd1218;
+}
+
+.tab-pane .dir-clear.show{
+    width: 25px;
+    height: 25px;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+#modal-confirm .modal-dialog .modal-content {
+    width: 30vw;
+    height: 260px;
+    box-shadow: 0px 8px 10px -5px rgb(0 0 0 / 20%), 0px 16px 24px 2px rgb(0 0 0 / 14%), 0px 6px 30px 5px rgb(0 0 0 / 12%);
+}
+
+button.main-here {
+    background-color: transparent;
+    cursor: pointer;
+    margin: 5px 0px;
+    padding: 0;
+    border: 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+    /*HOME*/
+    .main {
+        padding-bottom: 0;
+    }
+
+    .Homebanner {
+        background-image: url("urn:scrapbook:download:error:http://162.55.39.106/lander/white---cl---1/index_files/img-mobileBanner.webp");
+        background-size: cover !important;
+        width: 100vw;
+        height: 720px;
+    }
+
+    .deliveryTab {
+        margin-top: 0 !important;
+        bottom: 40px;
+    }
+
+    .deliveryTab .nav-link {
+        margin: 0 !important;
+        padding: 10px 10px !important;
+    }
+
+    .deliveryTab .tab-content {
+        border-radius: 0px 0px 20px 20px !important;
+    }
+
+    .nav {
+        justify-content: space-between !important;
+    }
+
+    .tab-pane .dir-clear{
+        background-color: #fff;
+        bottom: 10px;
+    }
+
+    .btn-circle {
+        margin-top: 15px;
+    }
+
+    .awesomeRaulForm{
+        padding-left: 0;
+    }
+
+    .row, .addres {
+        margin: 0;
+    }
+
+    .cardPromo-info.left h5 {
+        font-size: 25px;
+        padding-right: 30px;
+    }
+
+    .tittle-separator {
+        margin-top: 50px !important;
+    }
+
+    .text-mobile-text {
+        padding: 0 0;
+    }
+
+    .text-mobile-text> * {
+        white-space: nowrap;
+    }
+
+    .text-mobile {
+        margin-top: 50px;
+    }
+
+    .containerMobile .text-mobile-text a img {
+        width: calc(49% - 15px);
+        height: auto;
+    }
+
+    .footer-area .footer-social-links ul li{
+        margin: 0 10px;
+    }
+
+    /*MODALS*/
+    #map-address {
+        width: 100%;
+        height: calc(100% - 5rem);
+        border-radius: 20px;
+    }
+
+    #modal-confirm .modal-dialog .modal-content {
+        width: 80vw !important;
+        height: auto;
+    }
+
+    #modal-confirm .modal-dialog .modal-content .mdch-message {
+        font-size: 16px;
+    }
+
+    .info-detail {
+        height: auto;
+    }
+
+    .footer-area .footer-logo {
+        text-align: center !important;
+        padding: 0;
+    }
+
+    .footer-copyright-area p {
+        color: #ffffff;
+        text-align: center !important;
+        font-size: 14px;
+        margin: 13px 0;
+    }
+
+    .footer-area .footer-redes {
+        text-align: end;
+        padding: 0;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 600px) {
+    .deliveryTab {
+        transition: .2s;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .deliveryTab .info {
+        width: 90%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .deliveryTab {
+        transition: .2s;
+        display: flex;
+        justify-content: center;
+    }
+
+    .deliveryTab .info {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 986px) {
+    .footer-area .footer-logo, .footer-area .footer-redes{
+        text-align: center;
+        justify-content: center;
+    }
+}
